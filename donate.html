@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
   <!--<![endif]-->
+
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Vishnushakti</title>
+    <title>Vishnushakti Organization</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -18,16 +19,16 @@
       name="keywords"
       content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive"
     />
-    <meta name="author" content="FREEHTML5.CO" />
+    <meta name="author" content="vishnushakti.org" />
 
     <!-- 
 	//////////////////////////////////////////////////////
 
 	Vishnushakti  Organization Website
-	DESIGNED & DEVELOPED by FREEHTML5.CO
+	DESIGNED & DEVELOPED by vishnushakti.org
 		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
+	Website: 		http://vishnushakti.org/
+	Email: 			info@vishnushakti.org
 	Twitter: 		http://twitter.com/fh5co
 	Facebook: 		https://www.facebook.com/fh5co
 
@@ -61,6 +62,8 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <link rel="stylesheet" href="css/donate.css" />
+
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
@@ -68,6 +71,7 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
     <div id="fh5co-wrapper">
       <div id="fh5co-page">
@@ -93,29 +97,22 @@
               <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"
                 ><i></i
               ></a>
-              <h1 id="fh5co-logo"><a href="index.html">Charity</a></h1>
+              <h1 id="fh5co-logo"><a href="index.html">Vishnushakti</a></h1>
               <!-- START #fh5co-menu-wrap -->
               <nav id="fh5co-menu-wrap" role="navigation">
                 <ul class="sf-menu" id="fh5co-primary-menu">
-                  <li>
+                  <li class="active">
                     <a href="index.html">Home</a>
                   </li>
                   <li>
                     <a href="#" class="fh5co-sub-ddown">Get Involved</a>
                     <ul class="fh5co-sub-menu">
                       <li><a href="donate.html">Donate</a></li>
-                      <li><a href="donateviaupi.html">Fundraise</a></li>
+                      <li><a href="donateviaupi.html">Donate via UPI</a></li>
+                      <li><a href="#">Fundraise</a></li>
                       <li><a href="#">Campaign</a></li>
                       <li><a href="#">Philantrophy</a></li>
                       <li><a href="#">Volunteer</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#" class="fh5co-sub-ddown">Projects</a>
-                    <ul class="fh5co-sub-menu">
-                      <li><a href="#">Water World</a></li>
-                      <li><a href="#">Cloth Giving</a></li>
-                      <li><a href="#">Medical Mission</a></li>
                     </ul>
                   </li>
                   <li><a href="projects.html">Projects</a></li>
@@ -129,109 +126,95 @@
           </div>
         </header>
 
-        <div class="fh5co-hero">
-          <div class="fh5co-overlay"></div>
-          <div
-            class="fh5co-cover text-center"
-            data-stellar-background-ratio="0.5"
-            style="background-image: url(images/cover_bg_2.jpg)"
-          >
-            <div class="desc animate-box">
-              <h2><strong>Contact</strong> Us</h2>
-              <span
-                >HandCrafted by
-                <a
-                  href="http://frehtml5.co/"
-                  target="_blank"
-                  class="fh5co-site-name"
-                  >FreeHTML5.co</a
-                ></span
-              >
-              <span
-                ><a class="btn btn-primary btn-lg" href="donate.html"
-                  >Donate Now</a
-                ></span
-              >
+        <!-- end:header-top -->
+
+        <!-- fh5co-content-section -->
+
+        <div id="fh5co-portfolio" style="background: rgba(0, 0, 0, 0.04)">
+          <div class="container">
+            <div
+              class="col-md-6 col-md-offset-3 text-center heading-section animate-box"
+            >
+              <h3>Support Our Cause: Make a Difference Today</h3>
+              <p>
+                Your generous contributions enable us to extend our reach,
+                provide vital aid, and create meaningful change in the lives of
+                those we serve. Donate today to make a lasting impact on our
+                mission of compassion and empowerment.
+              </p>
+            </div>
+
+            <div class="container2">
+              <form id="Form1">
+                <h3>GET DETAILS</h3>
+                <label for="nation">Nationality</label>
+                <select name="nation" id="nation">
+                  <option value="India">India</option>
+                  <option value="NRI">NRI</option>
+                </select>
+                <input
+                  type="text"
+                  placeholder="Enter Amount"
+                  name="amount"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Enter email address"
+                  name="email"
+                  required
+                />
+
+                <div class="btn-box">
+                  <button type="button" id="Next1">Next</button>
+                </div>
+              </form>
+              <form id="Form2">
+                <h3>BILLING INFORMATION</h3>
+                <br />
+
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  name="firstname"
+                  required
+                />
+                <input type="text" placeholder="Last Name" name="lastname" />
+                <input type="tel" placeholder="Phone no." name="phone" />
+
+                <div class="btn-box">
+                  <button type="button" id="Back1">Back</button>
+                  <button type="button" id="Next2">Next</button>
+                </div>
+              </form>
+              <form id="Form3">
+                <h3>OPTIONAL DETAILS</h3>
+                <input type="text" placeholder="Address" name="address" />
+
+                <input
+                  type="text"
+                  placeholder="Enter your PAN no."
+                  name="pan"
+                />
+                <p>
+                  Note: If you need tax exemption, then please enter your PAN.
+                </p>
+                <div class="btn-box">
+                  <button type="button" id="Back2">Back</button>
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+              <div class="step-row">
+                <div id="progress"></div>
+                <div class="step-col"><small>Amount</small></div>
+                <div class="step-col"><small>Details</small></div>
+                <div class="step-col"><small>Optional</small></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div id="fh5co-contact" class="animate-box">
-          <div class="container">
-            <form action="#">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3 class="section-title">Our Address</h3>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </p>
-                  <ul class="contact-info">
-                    <li>
-                      <i class="icon-location-pin"></i>198 West 21th Street,
-                      Suite 721 New York NY 10016
-                    </li>
-                    <li><i class="icon-phone2"></i>+ 1235 2355 98</li>
-                    <li>
-                      <i class="icon-mail"></i><a href="#">info@yoursite.com</a>
-                    </li>
-                    <li>
-                      <i class="icon-globe2"></i
-                      ><a href="#">www.yoursite.com</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Name"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Email"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea
-                          name=""
-                          class="form-control"
-                          id=""
-                          cols="30"
-                          rows="7"
-                          placeholder="Message"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input
-                          type="submit"
-                          value="Send Message"
-                          class="btn btn-primary"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- END fh5co-contact -->
-        <div id="map" class="fh5co-map"></div>
-        <!-- END map -->
+        <!-- End of Donate Section -->
 
         <footer>
           <div id="footer">
@@ -246,11 +229,10 @@
                     <a href="#"><i class="icon-youtube"></i></a>
                   </p>
                   <p>
-                    Copyright 2024 <a href="vishnushakti.org">Vishnushakti</a>.
-                    All Rights Reserved. <br />Made with
+                    Copyright 2024. All Rights Reserved. <br />Made with
                     <i class="icon-heart3"></i> by
                     <a href="http://vishnushakti.org/" target="_blank"
-                      >Vishnushakti</a
+                      >vishnushakti.org</a
                     >
                   </p>
                 </div>
@@ -263,8 +245,39 @@
     </div>
     <!-- END fh5co-wrapper -->
 
-    <!-- jQuery -->
+    <script>
+      var Form1 = document.getElementById("Form1");
+      var Form2 = document.getElementById("Form2");
+      var Form3 = document.getElementById("Form3");
 
+      var Next1 = document.getElementById("Next1");
+      var Next2 = document.getElementById("Next2");
+      var Back1 = document.getElementById("Back1");
+      var Back2 = document.getElementById("Back2");
+      var progress = document.getElementById("progress");
+
+      Next1.onclick = function () {
+        Form1.style.left = "-450px";
+        Form2.style.left = "40px";
+        progress.style.width = "240px";
+      };
+      Back1.onclick = function () {
+        Form1.style.left = "40px";
+        Form2.style.left = "-450px";
+        progress.style.width = "120px";
+      };
+      Next2.onclick = function () {
+        Form2.style.left = "-450px";
+        Form3.style.left = "40px";
+        progress.style.width = "360px";
+      };
+      Back2.onclick = function () {
+        Form2.style.left = "40px";
+        Form3.style.left = "-450px";
+        progress.style.width = "240px";
+      };
+    </script>
+    <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- jQuery Easing -->
     <script src="js/jquery.easing.1.3.js"></script>
@@ -279,10 +292,6 @@
     <!-- Superfish -->
     <script src="js/hoverIntent.js"></script>
     <script src="js/superfish.js"></script>
-
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-    <script src="js/google_map.js"></script>
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
