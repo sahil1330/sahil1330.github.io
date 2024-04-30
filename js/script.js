@@ -90,6 +90,7 @@ async function displayAlbums() {
   // Array.from(anchors).forEach(async (e) => {
   for (let index = 0; index < array.length; index++) {
     const e = array[index];
+    console.log(e.href);
     if (e.href.includes("songs")) {
       // console.log(e.href.split("/").slice(-2)[1])
       let folder = e.href.split("/").slice(-2)[1];
