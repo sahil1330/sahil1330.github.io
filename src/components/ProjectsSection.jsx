@@ -3,7 +3,7 @@ import React from 'react'
 const ProjectsSection = () => {
   return (
     <>
-      <section className="projects w-full h-[100vh] max-lg:h-[220vh]">
+      <section className="projects w-full">
         <h1 className='text-white text-center text-4xl font-bold'>Projects</h1>
         <div className="cards grid lg:grid-cols-3 mx-auto w-11/12">
           <div className="card ">
