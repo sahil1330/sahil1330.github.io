@@ -11,9 +11,9 @@ const Navbar = () => {
                         <ul className='flex max-lg:flex-col justify-center'>
                             <li><a href="/">Home</a></li>
                             <li><a href="#AboutSection">About me</a></li>
-                            <li><a href="/">Projects</a></li>
-                            <li><a href="/">Contact Me</a></li>
-                            <li><a href="/">My Resume</a></li>
+                            <li><a href="#ProjectsSection">Projects</a></li>
+                            <li><a href="#ContactMeSection">Contact Me</a></li>
+                            <li><a href="https://drive.google.com/file/d/1BrW_nPTeH0S3CC04BHk03D3SZbqyddyD/view?usp=sharing" target="_blank">My Resume</a></li>
                         </ul>
                     </div>
                 </nav>
